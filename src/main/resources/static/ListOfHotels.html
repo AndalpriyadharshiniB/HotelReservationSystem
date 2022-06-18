@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  margin: auto 20px;
+  text-align: center;
+  font-family: arial;
+  display: flex;
+  justify-content: space-around;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+.img-hotel-wrapper{
+height:300px;
+width:300px;
+}
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.checked {
+  color: orange;
+}
+</style>
+<script>
+    function setHotelTitle(hotelName) {
+        if (typeof(Storage) !== "undefined") {
+            // Store
+            alert(hotelName);
+            sessionStorage.setItem("hotelname", hotelName);
+            window.location.href = "PriceDetails.html";
+        } 
+    }
+</script>
+
+</head>
+<body>
+
+<h2 style="text-align:center">chennai</h2>
+
+<div class="card">
+    <div class="img-hotel-wrapper">
+        <img src="Trident.jpg" alt="trident" style="width:100%">
+    </div>
+    <div class="content-hotel-wrapper">
+        <h1 onclick="setHotelTitle('Trident')">Trident </h1>
+        <div class="ratings-hotel">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+        </div>
+        <button>Book Now</button>
+    </div>
+</div>
+
+
+
+<h2 style="text-align:center">Hyderabad</h2>
+<div class="card">
+    <div class="img-hotel-wrapper">
+        <img src="Ritzcarlton.jpg" alt="Ritzcarlton" style="width:100%">
+    </div>
+    <div class="content-hotel-wrapper">
+        <h1 onclick="setHotelTitle('Ritzcarlton')">Ritzcarlton</h1>
+        <div class="ratings-hotel">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+        </div>
+        <button>Book Now</button>
+    </div>
+</div>
+<div class="card">
+    <div class="img-hotel-wrapper">
+        <img src="Hilton.jpg" alt="Hilton" style="width:100%">
+    </div>
+    <div class="content-hotel-wrapper">
+        <h1 onclick="setHotelTitle('Hilton')">Hilton</h1>
+        <div class="ratings-hotel">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+        </div>
+        <button>Book Now</button>
+    </div>
+</div>
+
+<h2 style="text-align:center">Goa</h2>
+<div class="card">
+    <div class="img-hotel-wrapper">
+        <img src="ITC Grand.jpg" alt="ITC Grand" style="width:100%">
+    </div>
+    <div class="content-hotel-wrapper">
+        <h1 onclick="setHotelTitle('ITC Grand')">ITC Grand</h1>
+        <div class="ratings-hotel">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+        </div>
+        <button>Book Now</button>
+    </div>
+</div>
+<div class="card">
+    <div class="img-hotel-wrapper">
+        <img src="Radission.jpg" alt="Radission" style="width:100%">
+    </div>
+    <div class="content-hotel-wrapper">
+        <h1 onclick="setHotelTitle('Radission')">Radission</h1>
+        <div class="ratings-hotel">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+        </div>
+        <button>Book Now</button>
+    </div>
+</div>
+<h2 style="text-align:center">Maldives</h2>
+<div class="card">
+    <div class="img-hotel-wrapper">
+        <img src="Double Tree.jpg" alt="Double Tree" style="width:100%">
+    </div>
+    <div class="content-hotel-wrapper">
+        <h1 onclick="setHotelTitle('Double Tree')">Double Tree</h1>
+        <div class="ratings-hotel">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+        </div>
+        <button>Book Now</button>
+    </div>
+</div>
+<div class="card">
+    <div class="img-hotel-wrapper">
+        <img src="Holiday Inn.jpg" alt="Holiday Inn" style="width:100%">
+    </div>
+    <div class="content-hotel-wrapper">
+        <h1 onclick="setHotelTitle('Holiday Inn')">Holiday Inn</h1>
+        <div class="ratings-hotel">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+        </div>
+        <button>Book Now</button>
+    </div>
+</div>
+
+</body>
+</html>
